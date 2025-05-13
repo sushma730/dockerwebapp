@@ -3,12 +3,12 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: sushma631/firstrepo:dbimage
+   image: sushma631/repo:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: sushma631/firstrepo:appimage
+   image: sushma631/repo:appimage
    container_name: containerapp
    ports:
      - "1234:8080"
